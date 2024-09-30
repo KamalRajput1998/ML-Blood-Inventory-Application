@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'upload_file' %}">AI Application For Managing Blood Inventory</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'predefined_file_list' %}">Sample Datasets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'results' %}">Predicted Blood Inventory Levels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'predicted_demand' %}">Predicted Blood Usage (Cardiac & ECMO)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'notifications'%}">Blood Inventory Notifications (LIVE)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                </li>
+                {% endif %}
+            </ul>
+        
+        </div>
+    
+    </div>
+
+</nav>

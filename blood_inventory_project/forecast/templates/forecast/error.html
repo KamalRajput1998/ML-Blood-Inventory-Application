@@ -1,0 +1,13 @@
+{% extends 'forecast/base.html' %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+    <br/>
+    <h2>Error</h2>
+    <br/>
+    <p style="color: red;">{{ error }}</p>
+    <br/>
+    <a href="{% url 'upload_file' %}" class="btn btn-secondary">Try again</a>
+{% endblock %}
+

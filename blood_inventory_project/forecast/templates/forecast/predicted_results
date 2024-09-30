@@ -1,0 +1,30 @@
+{% extends 'forecast/base.html' %}
+
+{% block title %}Blood Inventory Predictions{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <br/>
+        <h2 class="text-center mb-4">Predicted Blood Inventory Levels (+31 days)</h2>
+        <div class="text-center mt-4">
+            <a href="{% url 'upload_file' %}" class="btn btn-secondary">Upload Another Dataset</a>
+        </div>
+        <br/>
+        <br/>
+        {% if plots %}
+            <div class="row">
+                {% for target, plot_uri in plots.items %}
+                    <div class="col-md-6 mb-4">
+                        <h3>{{ target }}</h3>
+                        <img src="{{ plot_uri }}" class="img-fluid" alt="Forecast Plot for {{ target }}">
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>No data available.</p>
+        {% endif %}
+    </div>
+{% endblock %}
+
+
+

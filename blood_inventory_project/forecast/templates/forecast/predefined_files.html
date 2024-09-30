@@ -1,0 +1,28 @@
+{% extends 'forecast/base.html' %}
+
+{% block title %}Sample Datasets{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br/>
+    <h2 class="text-center mb-4">Sample Datasets</h2>
+    <br/>
+    <p class="text-center mb-4">Blood inventory datasets from VANESA available to download for machine learning. </p>
+    <p class="text-center mb-4">Please note: More datasets are to be added, including datasets from LIMS.</p>
+    <br/>
+    {% if files %}
+        <ul class="list-group">
+            {% for file in files %}
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    {{ file }}
+                    <a href="{% url 'download_predefined_file' file %}" class="btn btn-primary btn-sm">Download</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No files available for download.</p>
+    {% endif %}
+</div>
+{% endblock %}
+
+
