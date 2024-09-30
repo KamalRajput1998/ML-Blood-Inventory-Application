@@ -24,7 +24,7 @@ Ensure requirements are installed if repo is cloned:
 
 Web application can be accessed at:
 
-https://uhlbloodbank.pythonanywhere.com/
+<b>https://uhlbloodbank.pythonanywhere.com/</b>
 
 #
 
