@@ -1,4 +1,7 @@
 # ML-Blood-Inventory-Application
+
+<br/>
+
 An application which uses machine learning to predict blood inventory levels based on input data uploaded. 
 
 Developed using Django, pandas, matplotlib, numpy & prophet.
