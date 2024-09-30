@@ -5,8 +5,12 @@ Developed using Django, pandas, matplotlib, numpy & prophet.
 
 Supports the manual upload of datasets, automatic data pre-processing & univariate analysis of multiple models.
 
+<br/>
+
 Ensure requirements are installed if repo is cloned:
 
 <b>pip install -r requirements.txt</b>
+
+<br/>
 
 Copyright 2024 @KamalRajput1998
