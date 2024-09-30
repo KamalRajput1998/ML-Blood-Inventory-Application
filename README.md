@@ -10,6 +10,12 @@ Supports the manual upload of datasets, automatic data pre-processing & univaria
 
 #
 
+Clone repo: 
+
+<b>git clone https://github.com/KamalRajput1998/ML-Blood-Inventory-Application.git</b>
+
+<br/>
+
 Ensure requirements are installed if repo is cloned:
 
 <b>pip install -r requirements.txt</b>
