@@ -22,4 +22,10 @@ Ensure requirements are installed if repo is cloned:
 
 #
 
+Web application can be accessed at:
+
+https://uhlbloodbank.pythonanywhere.com/
+
+#
+
 Copyright 2024 @KamalRajput1998
