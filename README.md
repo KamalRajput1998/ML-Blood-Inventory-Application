@@ -28,4 +28,4 @@ Web application can be accessed at:
 
 #
 
-Copyright 2024 @KamalRajput1998
+Copyright @KamalRajput1998
